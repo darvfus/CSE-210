@@ -119,10 +119,10 @@ class Program
         {
             // Display menu
             Console.WriteLine("\nLibrary Menu:");
-            Console.WriteLine("1. Display all items");
-            Console.WriteLine("2. Search for a book by title");
-            Console.WriteLine("3. Add a new book");
-            Console.WriteLine("4. Exit");
+           
+            Console.WriteLine("1. Search for a book by title");
+            Console.WriteLine("2. Add a new book");
+            Console.WriteLine("3. Exit");
 
             // Get user input
             Console.Write("Enter your choice: ");
@@ -136,15 +136,13 @@ class Program
             // Perform action based on user choice
             switch (choice)
             {
+                
                 case 1:
-                    library.DisplayItems();
-                    break;
-                case 2:
                     Console.Write("Enter the title of the book you want to search: ");
                     string searchTitle = Console.ReadLine();
                     library.SearchBookByTitle(searchTitle);
                     break;
-                case 3:
+                case 2:
                     Console.WriteLine("\nEnter details of the new book to add:");
                     Console.Write("Title: ");
                     string newTitle = Console.ReadLine();
@@ -164,11 +162,11 @@ class Program
                     library.AddItem(newBook);
                     Console.WriteLine("Book added successfully.");
                     break;
-                case 4:
+                case 3:
                     Console.WriteLine("Exiting program...");
                     return;
                 default:
-                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 4.");
+                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 3.");
                     break;
             }
         }
