@@ -1,3 +1,8 @@
+/*
+
+
+
+
 --------------------     |----------------|
 |   LibraryItem    |     |     Book       |
 |------------------|     |----------------|
@@ -11,7 +16,7 @@
 |------------------|
 |     Library      |
 |------------------|
-| -items: List <>   |
+| -items: List <>  |
 |------------------|
 | +AddItem()       |
 | +DisplayItems()  |
@@ -28,4 +33,4 @@
 
 //When adding a new book, the program prompts the user for details of the new book and creates a new Book object using the provided information.
 
-//The program continues to loop until the user chooses to exit. ppp
+//The program continues to loop until the user chooses to exit. */
